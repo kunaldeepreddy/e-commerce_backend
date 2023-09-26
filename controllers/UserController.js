@@ -165,7 +165,7 @@ module.exports = {
 		var mobile_number = req.body.mobile_number;
 		var password = req.body.password;
 		var name = req.body.name;
-		if (!password || !email || !mobile_number || !name) {
+		if (!password || !email || !mobile_number || !name || !mobile_number) {
 			return res.json({
 				status: false,
 				message: "missing fields",
